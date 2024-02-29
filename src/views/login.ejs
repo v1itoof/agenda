@@ -15,7 +15,7 @@
 
                     <%- include('includes/messages'); %>
 
-                    <form action="/login/register" method="POST">
+                    <form class="form-cadastro" action="/login/register" method="POST">
                         <input type="hidden" name="_csrf" value="<%= csrfToken %>">
                         <div class="mb-3">
                             <label class="form-label">Email:</label>
@@ -33,7 +33,7 @@
                     <h4>Login</h4>
                     <p class="lead">Se você já tem sua conta, faça sua autenticação.</p>
                     
-                    <form action="/login/autenticacao" method="POST">
+                    <form class="form-login" action="/login/autenticacao" method="POST">
                         <input type="hidden" name="_csrf" value="<%= csrfToken %>">
                         <div class="mb-3">
                           <label class="form-label">Email:</label>
