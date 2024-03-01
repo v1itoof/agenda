@@ -24,12 +24,12 @@ export default class Login {
         let error = false;
 
         if(!validator.isEmail(emailInput.value)){
-            alert('email');
+            alert('Email inválido!');
             error = true;
         }
         
         if(senhaInput.value.length < 3 || senhaInput.value.length > 9){
-            alert('senha');
+            alert('Senha deve ter no minimo 3 a 9 caracteres!');
             error = true;
         }
 
